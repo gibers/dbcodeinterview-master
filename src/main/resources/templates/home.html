@@ -7,16 +7,16 @@
 
   <body>
     <h2>Spring Boot Contacts</h2>
-    <form method="POST">
+    <form th:action="@{/submit}"  method="POST">
       <label for="firstname">First Name:</label>
-      <input type="text" name="firstname"></input><br/>
+        <input type="text"  name="firstname"></input><br/>
       <label for="lastname">Last Name:</label>
-      <input type="text" name="lastname"></input><br/>
+        <input type="text" name="lastname"></input><br/>
       <label for="phonenumber">Phone #:</label>
-      <input type="text" name="phonenumber"></input><br/>
+        <input type="text" name="phonenumber"></input><br/>
       <label for="emailaddress">Email:</label>
-      <input type="text" name="emailaddress"></input><br/>
-      <input type="submit"></input>
+        <input type="text" name="emailaddress"></input><br/>
+        <input type="submit"></input>
     </form>
 
     <ul th:each="contact : ${contacts}">

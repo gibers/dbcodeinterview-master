@@ -8,12 +8,9 @@ import java.util.List;
 
 @Repository
 public interface ContactRepository extends JpaRepository<Contact, Long>
-//implements ContactDAO
 {
 
     List<Contact> findByFirstname(String firstName);
-//    List<Contact> findByFirstname(String firstName);
-//    List<Contact> findByfirstName(String firstName);
 
 //    private SessionFactory sessionFactory;
 //    @Autowired
